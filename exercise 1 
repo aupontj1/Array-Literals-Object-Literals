@@ -1,0 +1,67 @@
+/** Spread for Array Literals
+ *  
+ * Create a new arry using an existing array. Spreads an 
+ * existing array. Spreads the elements from one array 
+ * into a new array.
+ * 
+ */
+
+
+
+
+// Arrays of Cars Brands 
+const cars1 = ['BMW', 'Mercedes', 'Subaru'];
+const cars2 = ['Dodge', 'Buick', 'Toyota'];
+const cars3 = ['Nissan', 'Honda', 'Acura'];
+const cars4 = ['Volkswagen', 'Mazda', 'Chevrolet'];
+const cars5 = ['Jaguar', 'Bugatti', 'Rolls Royce'];
+const cars6 = ['Bentley', 'Cadillac']
+
+// Array Literals containing the Arrays of Car Brands
+const affordable = [...cars3, ...cars2];
+const expensive = [...cars1, ...cars5];
+const classics = [...cars5, ...cars6];
+
+
+
+
+
+/** Spread for Object Literals
+ * 
+ * Copies properties from one object into another
+ * object literal.
+ * 
+ */
+
+
+// Objects containing info on specific states 
+const NJ = {
+    weather: 'sunny',
+    parks: ['Branch Brook Park', 'Glendale Park', 'Verona Park'],
+    fastFoodChains: `${81.2} per capita`
+}
+const NY = {
+    weather: 'overcast',
+    parks: ['Central Park', 'Bronx Park', 'Marine Park'],
+    fastFoodChains: `${92.3} per capita`
+}
+const Georgia = {
+    weather: 'humid & sunny',
+    parks: ['Chastain Park', 'Piedmont Park', 'Grant Park'],
+    fastFoodChains: `${82.5} per capita`
+}
+
+
+
+// Object Literals containing the objects of the specific states
+const southEast = {
+    ...Georgia,
+    livingCondition: 'average',
+    overPopulated: false
+}
+const northEast = {
+    ...NJ,
+    ...NY,
+    livingCondition: 'above-average',
+    overPopulated: true
+}
