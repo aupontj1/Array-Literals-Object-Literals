@@ -1,3 +1,10 @@
+/** Spread for Array Literals
+ * 
+ * Create a new arry using an existing array. Spreads an 
+ * existing array. Spreads the elements from one array 
+ * into a new array.
+ * 
+ * */ 
 
 // Arrays of Cars Brands 
 const cars1 = ['BMW', 'Mercedes', 'Subaru'];
@@ -16,6 +23,12 @@ const classics = [...cars5, ...cars6];
 
 
 
+/** Spread for Object Literals
+ * 
+ * Copies properties from one object into another
+ * object literal.
+ * 
+ * */  
 
 // Objects containing info on specific states 
 const NJ = {
